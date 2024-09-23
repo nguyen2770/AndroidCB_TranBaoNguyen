@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgv_ans"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/turtle"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/txt_nameAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="rùa"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <include layout="@layout/loading" />
+</FrameLayout>
